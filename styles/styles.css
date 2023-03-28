@@ -4,6 +4,7 @@
     --blue:#45aae8;
     --black: #00000;
     --white:white;
+    --off-white: rgb(236, 226, 226);
 }
 
 nav{
@@ -104,6 +105,21 @@ h1, h2, h3{
     width:80%;
 }
 
+.post{
+    display:flex;
+    flex-direction:column;
+    /* justify-content:center; */
+    padding:10%;
+    margin: 20px;
+    background-color: var(--off-white);
+    border-radius:19px;
+    align-items:center;
+}
+
+.post-details{
+    background-color:var(--white);
+}
+
 .container p{
     width:80;
 }
@@ -143,11 +159,11 @@ h1, h2, h3{
     /* clip-path: circle();
     size: 25%; */
 
-.post-1{
+/* .post-1{
     display:flex;
     align-items:center;
     background-color:grey;
-}
+} */
 
 label{
     flex-grow: 1;
