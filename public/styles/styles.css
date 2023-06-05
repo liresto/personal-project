@@ -183,6 +183,7 @@ nav h1{
 
 .fa-address-card, .fa-github, .fa-linkedin{
     font-size:3em;
+    color:var(--white);
 }
     
 
@@ -940,7 +941,9 @@ footer{
 }
 
 
-
+#portfolio-link{
+    color:var(--purple);
+}
 a:link{
     color:var(--white);
     text-decoration:none;
