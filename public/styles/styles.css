@@ -53,7 +53,7 @@ p{
 
 .pink-line{
     background-color: var(--pink);
-    width:100%;
+    width:100vw;
     height:.5vh;
     /* margin:-5px; */
     /* margin-left:-10px; */
@@ -282,10 +282,10 @@ ul{
     content:"";
     background:var(--lavender);
     width:55%;
-    height:75vh;
+    height:75%;
     position:absolute;
-    left: 18%;
-    top:22%;
+    left: 19%;
+    top:45%;
     border-radius:30px;
     z-index:-1;
 }
@@ -312,6 +312,7 @@ h1, h2, h3{
     justify-content:center;
     overflow: hidden;
     min-width:385px;
+    /* margin-bottom: 5px; */
     /* max-height:900px; */
 }
 
@@ -712,7 +713,7 @@ th{
 table{
    
     width:75%;
-    margin:auto;
+    margin:20px;
     font-family:'Lexend Mega', sans-serif;
     
 }
@@ -761,6 +762,7 @@ table{
     /* justify-content: center; */
     flex-direction: column; 
     align-items:center;
+    position:relative;
     width:50%;
     height:70vh;
     /* border:5px solid var(--blue); */
@@ -938,6 +940,7 @@ footer{
     margin-bottom:-90px;
    font-family:'Lexend Mega', sans-serif;
     font-size:1.5em;
+    width:100vw;
 }
 
 
