@@ -948,7 +948,7 @@ footer{
     color:var(--purple);
 }
 a:link{
-    color:var(--white);
+    color:var(--black);
     text-decoration:none;
 }
 

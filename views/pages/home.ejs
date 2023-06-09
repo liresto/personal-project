@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%-include ("../partials/head") -%>
 
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+<%- include ("../partials/nav") -%>
 
-     <!-- Font Awesome -->
-     <script src="https://kit.fontawesome.com/d907dec37d.js" crossorigin="anonymous"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Warp&display=swap" rel="stylesheet">
-
-    <script defer src="./scripts/scripts.js"></script>
-    
-
-    
-</head>
-<body>
-    <div class="box"></div>
-
-    <div class="white-circle"></div>
-    <div class="logo">
-        <a href=".index.html">Rendered Realms</a>
-        <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-   
-    <nav>
         <!-- <div class ="logo">
         <div class ="circle"><a href="index.html"><img src="./logo/unite.png" alt="Unite Logo" class="logo-image"></a></div>
         <h1>Boston Community Network</h1>
@@ -46,22 +11,7 @@
 
         
 
-        <ul class="nav-links">
-           
-            <li><a href="./home.html">home</a></li>
-            <!-- <li><a href="./about.html">ABOUT</a></li> -->
-            <li><a href="./about.html">about</a></li>
-            <li><a href="./designs.html">designs</a></li>
-            <li><a class="hamburger-login" href="./login.html">login</a></li>
-        
-            <!-- <li class="hamburger-login">
-            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
-            </li> -->
-
-        </ul>
-    </nav>
-
-    <div class="pink-line"></div>
+ 
 
   <img class ="hero-img" src="./photos/hero/hero-cropped.jpeg">
   
@@ -176,34 +126,7 @@
     <img class="photo1" src="./photos/posts/photo1.jpeg">
     </div>
     </div>
-    <div class="pink-line"></div>
-    <footer>
-       
-        <div class ="footer-links-container">
-            <ul class="footer-links">
-            <li><a href="./home.html" rel="noopener noreferrer">home</a></li>
-            <!-- <a href="./about.html" rel="noopener noreferrer">About</a><br> -->
-            <li><a href="./resources.html" rel="noopener noreferrer">about</a></li>
-            <li><a href="./resources.html" rel="noopener noreferrer">designs</a></li>
-            <!-- <li><a href="./login.html" rel="noopener noreferrer">login</a></li> -->
-            </ul>
-        </div>
-    
-        <!-- <div class ="footer-logo">
-        <div class="footer-circle"> -->
-        
-        <!-- <a href="./home.html" target="_blank" rel="noopener noreferrer"> -->
-            <div class="socials">
-            <a href="/about.html"><i class="fa-solid fa-address-card"></i></a>
-            <a href="https://github.com/liresto"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/lisandro-resto/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            
-            <!-- <img src="./logo/unite.png" alt ="unite-logo" class ="logo-image" id="footer-logo"></a>  -->
+   
+     
 
-        </div> 
-        </div>   
-
-        </footer>
-</body>
-</html>
+     <%- include("../partials/footer") -%>

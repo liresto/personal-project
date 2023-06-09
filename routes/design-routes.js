@@ -6,7 +6,7 @@ router.route('/')
     .get(designsCtrl.allPosts);
 //not sure about allDesigns
 
-router.route("/:id")
+router.route("/:_id")
     .get(designsCtrl.postDetails)
     // .put(designsCtrl.updateDesign)
     // .delete(bookCtrl.deleteDesign)

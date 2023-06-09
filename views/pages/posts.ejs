@@ -9,15 +9,18 @@
         
 <div class="all-posts">
     <!-- USE AS A TEMPLATE -->
-    <a href="post-detail.html">
+
+    <% for (post of posts) { %>
+    <a href="/designs/<%= post._id%>">
         <div class="post">
             
-            <img class= "post-img" src="./photos/posts/inflated-anxiety.jpg">
+            <img class= "post-img" src="<%= post.image %>">
             <div class="pink-line"></div>
             <div class="post-title">
-                <p>Inflated Anxiety</p>
+                <p><%= post.title %></p>
             </div>
         </a>
+  
 
         <!-- USE AS A TEMPLATE -->
         
@@ -25,7 +28,9 @@
         
         </div>
 
-        <div class="post">
+        <% } %>
+
+        <!-- <div class="post">
     
             <img class= "post-img" src="./photos/posts/inflated-anxiety.jpg">
             <div class="pink-line"></div>
@@ -67,6 +72,6 @@
         <p>Inflated Anxiety</p>
     </div>
     
-</div>
+</div> -->
 
 <%- include("../partials/footer") -%>
