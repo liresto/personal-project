@@ -2,6 +2,8 @@ const data = require('../data/data')
 
 module.exports = {
 
+
+
 index: (request, response) => {
     response.render('pages/home', {
         // book: data,

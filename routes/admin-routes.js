@@ -11,7 +11,7 @@ router.route("/create")
 
 
 
-router.route("/update")
+router.route("/update/:_id")
     .get(adminCtrl.updatePost)
 
 

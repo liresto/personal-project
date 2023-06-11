@@ -8,7 +8,8 @@
 </div>
 
 <div class="add-comic-container">
-<button id="add-comic">Create a post <i class="fa-solid fa-plus"></i></button>
+
+<a href="./admin/create"><button id="add-comic">Create a post <i class="fa-solid fa-plus"></i></button></a>
 </div>
 
 
@@ -19,19 +20,11 @@
     <th>delete</th>
 </thead>
 
-<tr>
-    <td>Inflated Anxiety</td>
-    <td><div class="submit-container">
-        <button id="edit-button" ><i class="fa-solid fa-pen-to-square"></i></button></div></td>
-    <td><button id="edit-button" class="edit-button"><i class="fa-solid fa-trash"></i></td>
-</tr>
+<tbody>
 
-<tr>
-    <td>post title</td>
-    <td><button id="edit-button" class="edit-button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+    <%- include("../partials/post-listing") -%>
 
-    <td><button id="edit-button" class="edit-button"><i class="fa-solid fa-trash"></td>
-</tr>
+</tbody>
 
 </table>
 

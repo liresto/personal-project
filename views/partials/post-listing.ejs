@@ -1,0 +1,33 @@
+
+<% for(post of posts) { %>
+<tr>
+    <td><%= post.title %></td>
+    <td>
+        <!-- <div class="submit-container"> -->
+        <a href="/admin/update/<%=post._id %>">
+        <button id="edit-button" ><i class="fa-solid fa-pen-to-square"></i></button>
+        </a>
+    
+    <!-- </div> -->
+        
+    </td>
+    
+    <td>
+        <form action="/designs/<%=post._id%>?_method=DELETE" method="POST"enctype="application/x-www-form-url-encoded">
+
+        <button id="edit-button" class="edit-button">
+            <i class="fa-solid fa-trash"></i></button>
+
+        </form>
+    </td>
+</tr>
+
+
+<!-- <tr>
+    <td>post title</td>
+    <td><button id="edit-button" class="edit-button"><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+    <td><button id="edit-button" class="edit-button"><i class="fa-solid fa-trash"></td>
+</tr> -->
+
+<% } %>

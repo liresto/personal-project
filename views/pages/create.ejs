@@ -11,35 +11,35 @@
       
     </div>
 
-       <form action ="/create" method="POST" class="create-update-form">
+       <form action ="/designs/create/" method="POST" class="create-update-form">
    
        <div class="label-input">
        <label for ="artist">artist:</label>
        
        
-       <input type="text" class="form-input" placeholder="artist">
+       <input type="text" class="form-input" placeholder="artist" name="artist" required />
      
 
        </div>
    
        <div class="label-input">
-       <label for = "image-link">image link:</i></label>
+       <label for = "image-link">image link:</label>
    
-       <input type="text" class="form-input" placeholder="image link">
+       <input type="text" class="form-input" placeholder="image link" name="image" required />
    
        </div>
 
        <div class="label-input">
-        <label for = "portfolio">portfolio link:</i></label>
+        <label for = "portfolio">portfolio link:</label>
     
-        <input type="text" class="form-input" placeholder="portfolio link">
+        <input type="text" class="form-input" placeholder="portfolio link" name= "portfolio" required />
     
         </div>
 
         <div class="label-input">
-            <label for = "title">title:</i></label>
+            <label for = "title">title:</label>
         
-            <input type="text" class="form-input" placeholder="title">
+            <input type="text" class="form-input" placeholder="title" name = "title" required />
         
             </div>
 
@@ -54,13 +54,7 @@
 
 
        <div class="submit-container">
-       <input type="submit" value="submit" id="sign-in"></div>
-       
-   
-       
-   
-       <div class="submit-container">
-       </div>
+       <input type="submit" value="submit" id="sign-in" required /></div>
    
        
    

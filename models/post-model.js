@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const {Post} = mongoose;
+const {Schema} = mongoose;
 
-const postSchema = new Post({
+const postSchema = new Schema({
     artist: String,
     image: String,
     portfolio: String,
@@ -11,7 +11,7 @@ const postSchema = new Post({
     },
 );
 
-const Comic = mongoose.model('Post', postSchema);
+const Post = mongoose.model('Post', postSchema);
 
 
-module.exports = Comic;
+module.exports = Post;

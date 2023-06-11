@@ -11,13 +11,13 @@
       
     </div>
 
-       <form action ="/update" method="POST" class="create-update-form">
+       <form action ="/designs/<%=post._id%>?_method=PUT" method="POST" class="create-update-form" enctype="application/x-www-form-url-encoded">
    
        <div class="label-input">
        <label for ="artist">artist:</label>
        
        
-       <input type="text" class="form-input" placeholder="artist">
+       <input type="text" class="form-input" value="<%= post.artist %>" name = "artist" required />
      
 
        </div>
@@ -25,32 +25,31 @@
        <div class="label-input">
        <label for = "image-link">image link:</i></label>
    
-       <input type="text" class="form-input" placeholder="image link">
+       <input type="text" class="form-input" value="<%= post.image %>" name="image">
    
        </div>
 
        <div class="label-input">
         <label for = "portfolio">portfolio link:</i></label>
     
-        <input type="text" class="form-input" placeholder="portfolio link">
+        <input type="text" class="form-input" value ="<%= post.portfolio %>" name="portfolio">
     
         </div>
 
         <div class="label-input">
             <label for = "title">title:</i></label>
         
-            <input type="text" class="form-input" placeholder="title">
+            <input type="text" class="form-input" value="<%= post.title %>" name="title">
         
             </div>
 
             
 
         <div class = "description-label-input"><label for="description">description:</label>
-                    <textarea name="description"  id="description" placeholder="Synopsis"></textarea></div>
-            
-                
 
-    
+                    <textarea name="description" id="description" > <%=post.description %></textarea>
+
+                </div>
 
 
        <div class="submit-container">
