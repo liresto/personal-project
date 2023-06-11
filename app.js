@@ -8,6 +8,7 @@ const path = require('node:path');
 const passport = require('passport')
 const methodOverride = require('method-override');
 const indexRoutes = require('./routes/index-routes')
+require('./config/connection');
 const PORT = 3400;
 
 app.use(morgan('combined'));
@@ -25,7 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.json())
 
-require('./config/connection');
+
 
 app.listen(PORT, () => {
   console.log(`Server is listening on${PORT}`)
