@@ -6,7 +6,7 @@ module.exports = {
 
     adminConsole: async function(request, response){
 
-        // if(request.isAuthenticated()){
+        if(request.isAuthenticated()){
     await Post.find({}).then(function(post){
        //debug: we refactored to have if outside of mongoose method
             response.render('pages/admin', {
@@ -16,11 +16,12 @@ module.exports = {
         .catch(function(error){
             console.log(error)
         })
-        },
+    }
         
-        // else{
-        // response.redirect('/login')
-        // } 
+        else{
+        response.redirect('/login')
+        } 
+    },
     
 // adminConsole: (request, response) => {
 //     response.render('pages/admin', {
@@ -30,14 +31,18 @@ module.exports = {
 // },
 
 createPost: (request, response) => {
-    response.render('pages/create', {});
+    if(request.isAuthenticated()){
+    response.render('pages/create');
+    }else{
+        response.redirect('/login')
+    }
 },
 
 
 updatePost: async function(request, response) {
     const { _id } = request.params;
     // const foundBook = data.find(book => book._id === String(_id));
-        // if(request.isAuthenticated()){
+        if(request.isAuthenticated()){
     await Post.findOne({ _id: _id }).then(function (post) {
         response.render('pages/update', {
             post: post
@@ -47,11 +52,12 @@ updatePost: async function(request, response) {
     .catch(function (error) {
         console.log(error)
     })
+}
 
 
-// else{
-//     response.redirect('/login')
-//     } 
+else{
+    response.redirect('/login')
+    } 
 },
 
 
