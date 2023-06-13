@@ -25,6 +25,14 @@ userSchema.plugin(mongooseFindOrCreate);
 
 const User = mongoose.model('User', userSchema)
 
+async function run(){
+    await mongoose.connect(process.env.DB_URL)
+    mongoose.model('User', userSchema)
+    await mongoose.model('User').findOne()
+}
+
+run();
+
 passport.use(User.createStrategy());
 
 // passport.serializeUser(User.serializeUser());
@@ -62,7 +70,7 @@ passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     // process.env. instead of GOOGLE
-    callbackURL: "http://localhost:3400/auth/google/posts"
+    callbackURL: "http://https://brick-red-pigeon-tie.cyclic.app:3400/auth/google/posts"
   
     // put in place of this --> "http://www.example.com/auth/google/callback"
   },
