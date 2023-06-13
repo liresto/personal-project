@@ -70,7 +70,7 @@ passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     // process.env. instead of GOOGLE
-    callbackURL: "http://https://brick-red-pigeon-tie.cyclic.app:3400/auth/google/posts"
+    callbackURL: "https://brick-red-pigeon-tie.cyclic.app/auth/google/posts"
   
     // put in place of this --> "http://www.example.com/auth/google/callback"
   },
