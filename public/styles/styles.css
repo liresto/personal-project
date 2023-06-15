@@ -1096,6 +1096,10 @@ a:active{
         display:none;
     }
 
+    .fa-solid .fa-right-to-bracket{
+        display: none;
+    }
+
     footer{
         flex-direction: row;
         height:30vh;
