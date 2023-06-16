@@ -736,9 +736,13 @@ table{
     font-family:'Lexend Mega', sans-serif;
     background-color:var(--lavender);
     border-radius:10px;
-    width:25%;
-    /* height:3vh; */
+    width:6vw;
+    height:3vh;
     border:none;
+}
+
+#edit-icon{
+    font-size:1.5em;
 }
 
 .add-comic-container{
@@ -1068,7 +1072,7 @@ a:active{
     
     .nav-links{
         position:fixed;
-        left: -150%;
+        left: -120%;
         top: -50px;
         gap:0;
         flex-direction:column;
